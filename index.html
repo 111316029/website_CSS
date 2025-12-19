@@ -114,6 +114,37 @@
         /* RWD 影片縮放 */
         video { max-width: 100%; }
 
+        /* 影片介紹 */
+        figure figcaption {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #cbd5f5;
+            text-align: center;
+        }
+        .caption-title {
+            font-weight: bold;
+            color: #a5cbf4;
+        }
+
+        .caption-name {
+            font-size: 15px;
+            margin-top: 2px;
+             color: #fcd44f;
+        }
+
+        .caption-sub {
+            font-size: 13px;
+            opacity: 0.75;
+        }
+
+        .caption-desc {
+            margin-top: 6px;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #f4f4f5;
+        }
+
+
     </style>
 </head>
 <body>
@@ -127,14 +158,15 @@
             <a href="#section5">視訊作品</a>
             <a href="#section6">圖片作品</a>
             <a href="#section7">更多資訊</a>
-            <a href="#section8">地圖</a>
+            <a href="#section8">遊戲</a>
+            <a href="#section9">地圖</a>
         </nav>
     </header>
 
     <main>
         <aside>
             <blockquote>
-                <p style="color: #93c5fd;">歡迎蒞臨</p>
+                <p style="color: #93c5fd;">恭迎貴客</p>
             </blockquote>
         </aside>
 
@@ -157,7 +189,10 @@
         <article id="section2">
             <h2>就學經歷</h2>
             <table>
-                <thead><tr><th>Dates</th><th>School</th></tr></thead>
+                <thead>
+                    <tr><th>Dates</th>
+                    <th>School</th></tr>
+                </thead>
                 <tbody>
                     <tr><td>2022-2024</td><td>成功高中</td></tr>
                     <tr><td>2024-2025</td><td>國立台北教育大學資訊科學系</td></tr>
@@ -183,10 +218,43 @@
 
         <!-- 視訊 -->
         <article id="section5">
-            <h2>視訊介紹</h2>
-            <video controls width="300"><source src="" type="audio/mpeg"></video>
-            <video controls width="300"><source src="" type="video/mp4"></video>
-        </article>
+            <h2>視訊作品</h2>
+
+            <figure style="display:inline-block; margin:20px;">
+                <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/3wjnoWKlE3I"
+                title="The Light That Belongs to the Cat"
+                frameborder="0"
+                allowfullscreen>
+                </iframe>
+                <figcaption>
+                    <div class="caption-title">期末評量 Part A</div>
+                    <div class="caption-name">The Light That Belongs to the Cat</div>
+                    <div class="caption-sub">牠所屬的光</div>
+                    <div class="caption-desc">以貓作為引導，象徵進入另一個世界的轉換歷程。</div>
+                </figcaption>
+            </figure>
+
+            <figure style="display:inline-block; margin:20px;">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/dHMlSO91L4s"
+                    title="Video Work 2"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+                <figcaption>
+                    <div class="caption-title">期末評量另一版本</div>
+                    <div class="caption-name">The Light Beyond the Alley</div>
+                    <div class="caption-sub">穿過巷子的光</div>
+                    <div class="caption-desc">以不同方式作結</div>
+                </figcaption>
+            </figure>
+
+</article>
 
         <!-- 圖片 -->
         <article id="section6">
@@ -201,6 +269,18 @@
             <embed src="資二甲_111316029_黃昱翔_0922.pdf" width="100%" height="600">
         </article>
 
+        <!-- 遊戲容器 -->
+        <article id="section8">
+            <h2>遊戲</h2>
+            <div class="game-container" style="width: 100%; max-width: 500px; margin: 0 auto;">
+                <iframe 
+                src="tetris.html" 
+                style="width: 100%; height: 800px; border: none; overflow: hidden;" 
+                scrolling="no">
+                </iframe>
+            </div>
+        </article>
+
         <!-- 互動區 -->
         <details id="interactiveBox">
             <summary>互動（點我變色）</summary>
@@ -208,7 +288,7 @@
         </details>
 
         <!-- 地圖 -->
-        <article id="section8">
+        <article id="section9">
             <h2>地圖</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2784024338266!2d121.54206247541927!3d25.02462437782254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a908a8232611%3A0xeebfb2d71a5025c7!2z5ZyL56uL6Ie65YyX5pWZ6IKy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1731827435609!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;"></iframe>
         </article>
@@ -216,7 +296,7 @@
 
     <footer>
         <p>聯絡我們：contact@personalblog.com</p>
-        <time datetime="2025-11-29">最後更新日期：2025年11月29日</time>
+        <time datetime="2025-11-29">最後更新日期：2025年12月19日</time>
     </footer>
 
     <script>
@@ -228,5 +308,3 @@
     </script>
 </body>
 </html>
-
-
